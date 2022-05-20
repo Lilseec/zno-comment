@@ -30,7 +30,7 @@ async function getAnswer() {
     script.defer = true
     explanation.appendChild(script)
 
-    iframe.setAttribute("srcdoc", explanation)
+    iframe.setAttribute("srcdoc", explanation.outerHTML)
 
 }
 
