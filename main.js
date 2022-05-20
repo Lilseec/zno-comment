@@ -13,7 +13,10 @@ async function getAnswer() {
     let el = document.createElement('html')
     el.innerHTML = r
 
-    console.log(el.querySelector("img"))
+    let id = "q" + task_num
+
+    let explanation = el.querySelector("div #" + id).querySelector("div .explanation")
+    console.log(explanation)
 }
 
 btn.addEventListener('click', getAnswer)
