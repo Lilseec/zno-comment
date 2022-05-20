@@ -13,7 +13,7 @@ async function getAnswer() {
     let el = document.createElement('html')
     el.innerHTML = r
 
-    let id = "q" + task_num
+    let id = "q" + task
 
     let explanation = el.querySelector("div #" + id).querySelector("div .explanation")
     console.log(explanation)
